@@ -249,7 +249,7 @@ curl -X 'POST' -i \
     "sentence":"This is bad news"
 }'
 
-## Cas 3 utilisateur qui avec mauvais mot de passe :
+## Cas 3 utilisateur qui existe avec un mauvais mot de passe :
 curl -X 'POST' -i \
   'http://127.0.0.1:5000/v1/sentiment' \
   -H 'Content-Type: application/json' \
@@ -267,7 +267,7 @@ curl -X 'POST' -i \
     "sentence":"This is bad news"
 }'
 
-## Cas 5 utilisateur qui a droit à la v1 avec score négatif :
+## Cas 5 utilisateur qui a droit à la v1 avec un score négatif :
 curl -X 'POST' -i \
   'http://127.0.0.1:5000/v1/sentiment' \
   -H 'Content-Type: application/json' \
@@ -276,7 +276,7 @@ curl -X 'POST' -i \
     "sentence":"This is bad news"
 }'
 
-## Cas 6 utilisateur qui a droit à la v1 avec score positif :
+## Cas 6 utilisateur qui a droit à la v1 avec un score positif :
 curl -X 'POST' -i \
   'http://127.0.0.1:5000/v1/sentiment' \
   -H 'Content-Type: application/json' \
@@ -303,7 +303,7 @@ curl -X 'POST' -i \
     "sentence":"This is bad news"
 }'
 
-## Cas 3 utilisateur qui avec mauvais mot de passe :
+## Cas 3 utilisateur qui existe avec un mauvais mot de passe :
 curl -X 'POST' -i \
   'http://127.0.0.1:5000/v2/sentiment' \
   -H 'Content-Type: application/json' \
@@ -321,7 +321,7 @@ curl -X 'POST' -i \
     "sentence":"This is bad news"
 }'
 
-## Cas 5 utilisateur qui a droit à la v2 avec score négatif :
+## Cas 5 utilisateur qui a droit à la v2 avec un score négatif :
 curl -X 'POST' -i \
   'http://127.0.0.1:5000/v2/sentiment' \
   -H 'Content-Type: application/json' \
@@ -330,7 +330,7 @@ curl -X 'POST' -i \
     "sentence":"This is bad news"
 }'
 
-## Cas 6 utilisateur qui a droit à la v1 avec score positif :
+## Cas 6 utilisateur qui a droit à la v1 avec un score positif :
 curl -X 'POST' -i \
   'http://127.0.0.1:5000/v2/sentiment' \
   -H 'Content-Type: application/json' \
